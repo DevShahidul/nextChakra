@@ -1,8 +1,7 @@
-import React from 'react'
 import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react'
+import { css, Global } from '@emotion/react'
+import { prismDarkTheme, prismLightTheme } from '../styles/prism'
 import customTheme from '../styles/theme'
-import { Global, css } from '@emotion/react'
-import { prismLightTheme, prismDarkTheme } from '../styles/prism'
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode()
@@ -23,6 +22,10 @@ const GlobalStyle = ({ children }) => {
           html {
             min-width: 356px;
             scroll-behavior: smooth;
+          }
+          html, body{
+            font-size: 1rem;
+            -webkit-text-size-adjust: 100%;
           }
           #__next {
             display: flex;

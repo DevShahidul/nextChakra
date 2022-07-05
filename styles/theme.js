@@ -3,8 +3,8 @@ import { createBreakpoints } from '@chakra-ui/theme-tools';
 
 const fonts = {
     ...chakraTheme.fonts,
-    body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`,
-    heading: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`
+    body: `Inter,-apple-system,BlinkMacSystemFont,"Arkitekt",Helvetica,Arial,sans-serif,"Apple Color Emoji","Arkitekt Emoji","Arkitekt Symbol"`,
+    heading: `Inter,-apple-system,BlinkMacSystemFont,"Arkitekt",Helvetica,Arial,sans-serif,"Apple Color Emoji","Arkitekt Emoji","Arkitekt Symbol"`
 }
 
 const breakpoints = createBreakpoints({
@@ -13,6 +13,7 @@ const breakpoints = createBreakpoints({
     md: "991px",
     lg: "1024px",
     xl: "1200px",
+    '2xl': "1440",
 })
 
 const overrides = {
@@ -30,7 +31,15 @@ const overrides = {
         md: "16px",
         lg: "18px",
         xl: "20px",
-    }
+    },
+    // styles: {
+    //     global: {
+    //         "html, body": {
+    //             fontSize: "1rem",
+    //             "-webkit-text-size-adjust": "100%"
+    //         }
+    //     }
+    // }
 }
 
 const customTheme = extendTheme(overrides);

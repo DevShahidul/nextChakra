@@ -12,7 +12,8 @@ export default class MyDocument extends NextDocument {
             <Html lang="en">
                 <GoogleFonts href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" />
                 <Head>
-                    <script async src="https://cdn.splitbee.io/sb.js"></script>
+                    {/* <title>Demo</title> */}
+                    {/* <script async src="https://cdn.splitbee.io/sb.js"></script> */}
                 </Head>
                 <body>
                     <ColorModeScript />
